@@ -1,0 +1,5 @@
+{
+  "title" : "Hotel Information",
+  "description" : "Structured hotel data returned by the booking agent",
+  "lightning:type" : "@apexClassType/c__HotelSearchResult$Hotel"
+}

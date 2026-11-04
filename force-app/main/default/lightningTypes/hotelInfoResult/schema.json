@@ -1,0 +1,5 @@
+{
+  "title" : "Hotel Info Result",
+  "description" : "Top-level response for Hotel Search",
+  "lightning:type" : "@apexClassType/HotelSearchResult$HotelDetailsResponse"
+}

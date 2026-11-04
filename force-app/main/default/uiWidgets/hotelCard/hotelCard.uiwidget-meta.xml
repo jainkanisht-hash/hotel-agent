@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UiWidgetBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Hotel Card</masterLabel>
+    <description>Displays hotel details including name, city, check-in and check-out times, nightly price, and rating.</description>
+    <widgetType>JSON</widgetType>
+</UiWidgetBundle>

@@ -1,0 +1,18 @@
+{
+  "renderer" : {
+    "componentOverrides" : {
+      "$" : {
+        "definition" : "@widget/c/hotelCard",
+        "attributes" : {
+          "hotelId" : "{!$attrs.hotelId}",
+          "name" : "{!$attrs.name}",
+          "city" : "{!$attrs.city}",
+          "checkInTime" : "{!$attrs.checkInTime}",
+          "checkOutTime" : "{!$attrs.checkOutTime}",
+          "pricePerNight" : "{!$attrs.pricePerNight}",
+          "rating" : "{!$attrs.rating}"
+        }
+      }
+    }
+  }
+}

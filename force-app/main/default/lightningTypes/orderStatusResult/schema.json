@@ -1,0 +1,5 @@
+{
+  "title" : "Order Status Result",
+  "description" : "Output schema for Soft Drink Order Status",
+  "lightning:type" : "@apexClassType/SoftDrinkOrderStatus$OrderInfo"
+}
