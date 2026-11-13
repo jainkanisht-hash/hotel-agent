@@ -1,0 +1,20 @@
+{
+  "renderer" : {
+    "componentOverrides" : {
+      "$" : {
+        "definition" : "@widget/c/customerProfileCard",
+        "attributes" : {
+          "customerName" : "{!$attrs.customerName}",
+          "age" : "{!$attrs.age}",
+          "netWorth" : "{!$attrs.netWorth}",
+          "totalInvestment" : "{!$attrs.totalInvestment}",
+          "currentPortfolio" : "{!$attrs.currentPortfolio}",
+          "futureGoal" : "{!$attrs.futureGoal}",
+          "accountIdUsed" : "{!$attrs.accountIdUsed}",
+          "unifiedHexId" : "{!$attrs.unifiedHexId}",
+          "resultMessage" : "{!$attrs.resultMessage}"
+        }
+      }
+    }
+  }
+}

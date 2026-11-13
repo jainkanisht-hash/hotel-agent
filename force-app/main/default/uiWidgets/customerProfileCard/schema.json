@@ -1,1 +1,21 @@
-{"title":"Customer Profile Card","description":"Displays the 360 Customer Profile and Financials from Data Cloud","type":"object","properties":{"attributes":{"properties":{"customerName":{"title":"Customer Name","description":"The unified name of the customer","lightning:type":"lightning__textType"},"age":{"title":"Age","description":"The customer's age","lightning:type":"lightning__numberType"},"netWorth":{"title":"Net Worth","description":"Total net worth of the customer","lightning:type":"lightning__numberType"},"totalInvestment":{"title":"Total Investment","description":"Sum of all investments","lightning:type":"lightning__numberType"},"currentPortfolio":{"title":"Current Portfolio","description":"Value of the current portfolio","lightning:type":"lightning__numberType"},"futureGoal":{"title":"Future Goal","description":"Target future goal amount","lightning:type":"lightning__numberType"},"resultMessage":{"title":"Result Message","description":"System status or error message","lightning:type":"lightning__textType"}},"lightning:type":"lightning__objectType"}}}
+{
+    "title": "Customer Profile Widget",
+    "description": "Displays Customer 360 financial profile data.",
+    "type": "object",
+    "properties": {
+        "attributes": {
+            "properties": {
+                "customerName": { "title": "Customer Name", "lightning:type": "lightning__textType" },
+                "age": { "title": "Age", "lightning:type": "lightning__numberType" },
+                "netWorth": { "title": "Net Worth", "lightning:type": "lightning__numberType" },
+                "totalInvestment": { "title": "Total Investment", "lightning:type": "lightning__numberType" },
+                "currentPortfolio": { "title": "Current Portfolio", "lightning:type": "lightning__numberType" },
+                "futureGoal": { "title": "Future Goal", "lightning:type": "lightning__numberType" },
+                "accountIdUsed": { "title": "Account ID", "lightning:type": "lightning__textType" },
+                "unifiedHexId": { "title": "Unified ID", "lightning:type": "lightning__textType" },
+                "resultMessage": { "title": "Result Message", "lightning:type": "lightning__textType" }
+            },
+            "lightning:type": "lightning__objectType"
+        }
+    }
+}

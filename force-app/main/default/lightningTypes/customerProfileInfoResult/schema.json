@@ -1,0 +1,5 @@
+{
+  "title" : "Customer Profile Result",
+  "description" : "Top-level response for Customer Profile Search",
+  "lightning:type" : "@apexClassType/c__AgentforceDataCloudService$AgentOutput"
+}
