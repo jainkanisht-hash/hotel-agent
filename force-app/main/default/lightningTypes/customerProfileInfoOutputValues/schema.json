@@ -1,0 +1,13 @@
+{
+  "title" : "Customer Profile Output Values",
+  "description" : "Payload fields from the Data Cloud Service response",
+  "lightning:type" : "lightning__objectType",
+  "unevaluatedProperties" : false,
+  "lightning:tags" : [ "mcp" ],
+  "properties" : {
+    "customerProfile" : {
+      "title" : "Customer Profile",
+      "lightning:type" : "@apexClassType/c__AgentforceDataCloudService$ProfileData"
+    }
+  }
+}

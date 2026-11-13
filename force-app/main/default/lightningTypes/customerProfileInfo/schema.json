@@ -1,0 +1,5 @@
+{
+  "title" : "Customer Profile",
+  "description" : "Structured Customer Profile data returned by the agent",
+  "lightning:type" : "@apexClassType/c__AgentforceDataCloudService$ProfileData"
+}

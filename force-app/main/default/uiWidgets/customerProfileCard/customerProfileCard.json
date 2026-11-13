@@ -1,1 +1,142 @@
-{"type":"lightning__agentforceWidget","title":"Customer Profile Card","contentBody":{"widgetBody":{"definition":"tile/widget","id":"a5c6bb90-88a8-4a90-b532-f4ae5a7e7227","children":[{"definition":"tile/column","attributes":{"gap":"md","align":"stretch","width":"auto"},"id":"577c338d-3735-4b0b-af21-2939cdb1eabd","children":[{"definition":"tile/text","attributes":{"text":"{!$attrs.customerName} - 360 Profile","variant":"h2","weight":"bold","color":"default","isItalic":false,"isStrikethrough":false},"id":"ad010934-0886-429a-b36c-5b749c43cf44"},{"definition":"tile/row","attributes":{"gap":"md","align":"center","justify":"start","isWrapped":true},"id":"026c8410-478a-4e37-bf9e-2b91979862d4","children":[{"definition":"tile/column","attributes":{"gap":"md","align":"stretch","width":"auto"},"id":"73bb2939-bfc8-4e37-8937-faf699505e96","children":[{"definition":"tile/text","attributes":{"text":"Net Worth","variant":"caption","color":"default","isItalic":false,"isStrikethrough":false},"id":"a9b49a54-8662-4c77-94f1-6e6164b46686"},{"definition":"tile/text","attributes":{"text":"${!$attrs.netWorth}","variant":"h3","weight":"bold","color":"default","isItalic":false,"isStrikethrough":false},"id":"603d8648-89f8-4c91-a787-dc5d75389798"}]},{"definition":"tile/column","attributes":{"gap":"md","align":"stretch","width":"auto"},"id":"bab706a4-9aae-46e5-aede-2b714e6757d9","children":[{"definition":"tile/text","attributes":{"text":"Total Investment","variant":"caption","color":"default","isItalic":false,"isStrikethrough":false},"id":"b8bcdfcb-8bc4-40f7-871d-082d3e169d7f"},{"definition":"tile/text","attributes":{"text":"${!$attrs.totalInvestment}","variant":"h3","weight":"bold","color":"default","isItalic":false,"isStrikethrough":false},"id":"8ea824c0-20ab-4773-a575-371d86f41182"}]}]},{"definition":"tile/row","attributes":{"gap":"md","align":"center","justify":"start","isWrapped":true},"id":"14ea0a86-cb9d-45df-8a07-070ef1205632","children":[{"definition":"tile/column","attributes":{"gap":"md","align":"stretch","width":"auto"},"id":"7ba8d9ee-bff6-4e30-a9b0-f8c92817f30d","children":[{"definition":"tile/text","attributes":{"text":"Current Portfolio","variant":"caption","color":"default","isItalic":false,"isStrikethrough":false},"id":"57cd3c65-5375-4a23-94ef-8479018e2c1e"},{"definition":"tile/text","attributes":{"text":"${!$attrs.currentPortfolio}","variant":"h3","weight":"bold","color":"default","isItalic":false,"isStrikethrough":false},"id":"78f7bd87-2063-4338-9f1f-ab3a30b1c9b7"}]},{"definition":"tile/column","attributes":{"gap":"md","align":"stretch","width":"auto"},"id":"6c29b6d2-8541-4ee2-b4d9-686039736916","children":[{"definition":"tile/text","attributes":{"text":"Future Goal","variant":"caption","color":"default","isItalic":false,"isStrikethrough":false},"id":"59783156-08ab-4734-bcc3-5b018d61459d"},{"definition":"tile/text","attributes":{"text":"${!$attrs.futureGoal}","variant":"h3","weight":"bold","color":"default","isItalic":false,"isStrikethrough":false},"id":"291daa3a-89d0-422e-8acf-b1490bc3cd4d"}]}]},{"definition":"tile/text","meta":{"if":"{!$attrs.resultMessage != 'Customer profile retrieved successfully.'}"},"attributes":{"text":"{!$attrs.resultMessage}","variant":"caption","color":"default","isItalic":false,"isStrikethrough":false},"id":"c61c2f91-368c-455a-97f8-c418b52720e8"}]}]}}}
+{
+    "type": "lightning__agentforceWidget",
+    "title": "Customer 360 Profile",
+    "contentBody": {
+        "widgetBody": {
+            "definition": "tile/widget",
+            "id": "a1000000-0000-4000-8000-000000000001",
+            "children": [
+                {
+                    "definition": "tile/column",
+                    "attributes": {
+                        "gap": "sm",
+                        "align": "stretch",
+                        "width": "auto"
+                    },
+                    "id": "a1000000-0000-4000-8000-000000000002",
+                    "children": [
+                        {
+                            "definition": "tile/container",
+                            "attributes": { "borderless": false, "variant": "default", "isVisible": true },
+                            "id": "a1000000-0000-4000-8000-000000000003",
+                            "children": [
+                                {
+                                    "definition": "tile/column",
+                                    "attributes": { "gap": "xs", "align": "stretch", "width": "auto" },
+                                    "id": "a1000000-0000-4000-8000-000000000004",
+                                    "children": [
+                                        {
+                                            "definition": "tile/text",
+                                            "attributes": {
+                                                "text": "{!$attrs.customerName}",
+                                                "variant": "h3",
+                                                "weight": "bold",
+                                                "color": "error",
+                                                "isItalic": false,
+                                                "isStrikethrough": false
+                                            },
+                                            "id": "a1000000-0000-4000-8000-000000000005"
+                                        },
+                                        {
+                                            "definition": "tile/text",
+                                            "attributes": {
+                                                "text": "Account: {!$attrs.accountIdUsed} • Age: {!$attrs.age}",
+                                                "variant": "body",
+                                                "color": "muted",
+                                                "isItalic": false,
+                                                "isStrikethrough": false
+                                            },
+                                            "id": "a1000000-0000-4000-8000-000000000006"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "definition": "tile/container",
+                            "attributes": { "borderless": false, "variant": "default", "isVisible": true },
+                            "id": "a1000000-0000-4000-8000-000000000007",
+                            "children": [
+                                {
+                                    "definition": "tile/column",
+                                    "attributes": { "gap": "md", "align": "stretch", "width": "auto" },
+                                    "id": "a1000000-0000-4000-8000-000000000008",
+                                    "children": [
+                                        {
+                                            "definition": "tile/row",
+                                            "attributes": { "gap": "md", "align": "center", "justify": "between", "isWrapped": true },
+                                            "id": "a1000000-0000-4000-8000-000000000009",
+                                            "children": [
+                                                {
+                                                    "definition": "tile/column",
+                                                    "attributes": { "gap": "xs", "align": "start", "width": "auto" },
+                                                    "id": "a1000000-0000-4000-8000-000000000010",
+                                                    "children": [
+                                                        { "definition": "tile/text", "attributes": { "text": "Net Worth", "variant": "caption", "weight": "semibold", "color": "muted", "isItalic": false, "isStrikethrough": false }, "id": "a1000000-0000-4000-8000-000000000011" },
+                                                        { "definition": "tile/text", "attributes": { "text": "${!$attrs.netWorth}", "variant": "h4", "weight": "bold", "color": "success", "isItalic": false, "isStrikethrough": false }, "id": "a1000000-0000-4000-8000-000000000012" }
+                                                    ]
+                                                },
+                                                {
+                                                    "definition": "tile/column",
+                                                    "attributes": { "gap": "xs", "align": "start", "width": "auto" },
+                                                    "id": "a1000000-0000-4000-8000-000000000013",
+                                                    "children": [
+                                                        { "definition": "tile/text", "attributes": { "text": "Current Portfolio", "variant": "caption", "weight": "semibold", "color": "muted", "isItalic": false, "isStrikethrough": false }, "id": "a1000000-0000-4000-8000-000000000014" },
+                                                        { "definition": "tile/text", "attributes": { "text": "${!$attrs.currentPortfolio}", "variant": "h4", "weight": "bold", "color": "primary", "isItalic": false, "isStrikethrough": false }, "id": "a1000000-0000-4000-8000-000000000015" }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "definition": "tile/row",
+                                            "attributes": { "gap": "md", "align": "center", "justify": "between", "isWrapped": true },
+                                            "id": "a1000000-0000-4000-8000-000000000016",
+                                            "children": [
+                                                {
+                                                    "definition": "tile/column",
+                                                    "attributes": { "gap": "xs", "align": "start", "width": "auto" },
+                                                    "id": "a1000000-0000-4000-8000-000000000017",
+                                                    "children": [
+                                                        { "definition": "tile/text", "attributes": { "text": "Total Investment", "variant": "caption", "weight": "semibold", "color": "muted", "isItalic": false, "isStrikethrough": false }, "id": "a1000000-0000-4000-8000-000000000018" },
+                                                        { "definition": "tile/text", "attributes": { "text": "${!$attrs.totalInvestment}", "variant": "h4", "weight": "bold", "color": "primary", "isItalic": false, "isStrikethrough": false }, "id": "a1000000-0000-4000-8000-000000000019" }
+                                                    ]
+                                                },
+                                                {
+                                                    "definition": "tile/column",
+                                                    "attributes": { "gap": "xs", "align": "start", "width": "auto" },
+                                                    "id": "a1000000-0000-4000-8000-000000000020",
+                                                    "children": [
+                                                        { "definition": "tile/text", "attributes": { "text": "Future Goal", "variant": "caption", "weight": "semibold", "color": "muted", "isItalic": false, "isStrikethrough": false }, "id": "a1000000-0000-4000-8000-000000000021" },
+                                                        { "definition": "tile/text", "attributes": { "text": "${!$attrs.futureGoal}", "variant": "h4", "weight": "bold", "color": "primary", "isItalic": false, "isStrikethrough": false }, "id": "a1000000-0000-4000-8000-000000000022" }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "definition": "tile/row",
+                            "attributes": { "gap": "sm", "align": "center", "justify": "center", "isWrapped": true },
+                            "id": "a1000000-0000-4000-8000-000000000023",
+                            "children": [
+                                {
+                                    "definition": "tile/text",
+                                    "attributes": {
+                                        "text": "{!$attrs.resultMessage}",
+                                        "variant": "caption",
+                                        "color": "success",
+                                        "isItalic": true,
+                                        "isStrikethrough": false
+                                    },
+                                    "id": "a1000000-0000-4000-8000-000000000024"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
